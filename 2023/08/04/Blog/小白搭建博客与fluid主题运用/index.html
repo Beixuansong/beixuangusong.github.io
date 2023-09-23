@@ -1,0 +1,1254 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>小白搭建博客与fluid主题运用 | 松下清斋</title><meta name="keywords" content="blog"><meta name="author" content="北轩孤淞"><meta name="copyright" content="北轩孤淞"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="小白搭建博客与fluid主题运用"><meta name="application-name" content="小白搭建博客与fluid主题运用"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="小白搭建博客与fluid主题运用"><meta property="og:url" content="http://example.com/2023/08/04/Blog/小白搭建博客与fluid主题运用/index.html"><meta property="og:site_name" content="松下清斋"><meta property="og:description" content="搭建blog"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://bu.dusays.com/2023/09/20/650aded1342cf.jpg"><meta property="article:author" content="北轩孤淞"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2023/09/20/650aded1342cf.jpg"><meta name="description" content="搭建blog"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://example.com/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="var(--anzhiyu-main)"/><link rel="mask-icon" href="/img/siteicon/safari-pinned-tab.svg" color="#5bbad5"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"/><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/favicon-16x16.png"/><link rel="bookmark" href="/img/siteicon/apple-touch-icon.png"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1290-2796.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2796-1290.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2556-1179.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"tianli","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"bfdb159e7b9d37105a66","Referer":"https://qinghuan.live"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":90,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 北轩孤淞","link":"链接: ","source":"来源: 松下清斋","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '松下清斋',
+  title: '小白搭建博客与fluid主题运用',
+  postAI: 'true',
+  pageFillDescription: '准备工作, GitHub 注册, Git 安装, 绑定 GitHub 并提交文件, 购买域名, 安装node.js和Hexo, 解析域名, 设置fluid主题, 个人博客的使用首先感谢小智的幸苦付出帮本人搭建起来了个人博客以及为我解惑作为一名中医学生对这方面的了解确实不多但身为理科生对数字和字符的敏感激发了我的兴趣那么就以我这样一个小白的视角去看看到底是如何搭建个人博客以及运用主题的吧此外在这里也推荐一个教程本人也是跟着此教程一步步摸索的准备工作首先你最好要有翻墙工具因为下载的一些东西有的在外网上没有的话可能会出现卡顿在这里推荐首先注册一个的账号点击此进入进入首页下载客户端注意是版本并根据它所给的步骤安装如下图所示根据自己的情况在商店中选择会员左击桌面左下角的按钮搜索命令提示符应用或者在桌面下方的搜索中输入命令提示符打开文件位置之后右击命令提示符打开属性点击快捷方式中的高级选项并勾选用管理身份运行如下图所示下载软件打开该软件点击左侧最下方按钮并搜索下载如图所示的三个插件第一个是语言的转换第二个是用于我们的博客写作我们需要知道它的使用方法点击进入官方教程学习基本语法和扩展语法此外还有图片设置以及字体颜色大小设置这些仅供参考也可自行查找了解学习一般我们在写作时会打开侧边预览快捷键先按再按不要同时按第三个是后面用于博客网页显示图片所需的插件注册正式的第一步注册账号相当于一个仓库云端装载着你的博客内容打开官网这里需要翻墙不开可能会进不去直接输入邮箱注册如下图所示完成填写电子邮箱密码用户名即可如下图所示在此之后会根据你填写的电子邮箱发送验证码正确填写即可这便注册成功之后可根据自己的实际情况填写也可以点击跳过个性化搭建个人博客不需要其他很多的无关操作出现下图所示我们的注册就完成啦至此第一步的操作就结束啦安装在这之前我们应该了解一下什么是通俗点说是一种传输工具是将你的文件从本地传输到你的仓库中直接进入官网下载官网下载在这里下载的是版本与教程所给版本不同有所差别选择视窗下载然后根据电脑系统信息中的系统类型选择下载适用电脑的类型下载完成后按照下列步骤一步步操作安装先选择你需要存储的文件夹桌面快捷方式的建立无需勾选给文件的命名保持默认就行之后按照图片上的一步步操作勾选即可此处我们要勾选自带的在下一个步骤中我们需要利用来完成的绑定并提交文件这样很方便快捷安装完成后打开命令提示符上文准备工作中所提及的直接输入回车即可观察是否出现了如图所示的字样如果出现了则说明安装成功啦至此第二步就全部成功完成啦绑定并提交文件我们已经注册成功了和下载完成了上文提到过是一个仓库云端将要装载着你个人博客的相关文件则是一个传输工具连接着你的电脑本地文件和你的仓库那么现在我们要做的就是将传输工具对上仓库的接口绑定上文提到了勾选自带的在此处我们需要利用首先我们要了解什么是安全外壳协议的缩写是建立在应用层基础上的安全协议是目前较可靠专为远程登录会话和其他网络服务提供安全性的协议利用协议可以有效防止远程管理过程中的信息泄露问题简单来说就是保障你的账户安全将你的数据加密压缩不仅防止其他人截获你的数据还能加快传输速度我们要用上传文件到首先得利用登录远程主机而登录方式有两种一种是口令登录另一种是公钥登录口令登录每次都要输入密码十分麻烦而公钥登录就省去了输入密码的步骤所以我们选择公钥授权首先我们得在上添加配置要想生成就要先安装不过我们安装了其应该自带了检验一下是否安装打开命令提示符输入查看本机是否安装成功当出现如下图所示则表示安装成功再直接输入命令注意空格和前有空格表示我们指定算法生成密钥然后敲四次回车键之后就就会生成两个文件分别为秘钥和公钥为扩展名在命令提示符上会有位置说明如下图所示如果命令提示符操作完成后实在找不到文件也没有关系按照以下步骤直接在上打开就行分别输入注意中的复制粘贴不是和而是和注意空格然后产生的代码其实是跟公钥文件中的代码一样的如下图所示之后登录点击右上角的个人图标再在弹出框中点击设置如下图所示接着如下图先点击再点击再将公钥文件中的内容或者中产生的代码内容复制粘贴到内一定要输入标题且符合要求此处跟上面所提及的教程有所出入如果不输入标题就不会添加成功新的密钥当添加成功时你的邮箱会收到提醒再点击如下图最后在命令提示符中输入命令并回车注意空格和前有空格如果出现了第一个图中的情况直接输入回车即可出现图二中的代码即表示绑定成功啦到此该步骤中的绑定已经完成了接下来就是提交文件啦提交文件这一步就是将中的仓库通过连接到本地然后从本地上传文件到的仓库以确定连接成功该步骤与上文提到的教程几乎完全不符在此也花了很多时间摸索此方法也算比较简单的此步骤是为了连接本地三者为后面的铺垫该新建的仓库意义不大后面可以删除首先点击主页右上角的个人头像打开个人资料点击右上角按钮创建新的仓库命名后点击最下方的创建储存库注意不用勾选添加自述文件后面会自己上传自述文件且添加了自述文件就跟此方法有所差异如下图所示打开新建立的仓库注意第二张图最下方红色框框里的内容这是我们等下所需要的相关代码注意空格提交说明注意此代码与所给代码不同部分为上方红色矩形框中的地址上面是准备工作接下来是进入正题首先我们要选择一个文件夹来储存本地数据即储存本地仓库例如下图我选择在盘中创立一个新的文件夹建议创立在盘以便后续操作来储存本地仓库在上述储存文件夹中再建立一个新的空文件夹作为的本地仓库命名随意但必须是英文如下图所示打开命令提示符如图所示最先开始是对盘的编辑而我创立的文件夹在盘所以我需要改变路径进入到我们刚刚创立的本地仓库中注意空格接着我们输入代码命令来初始化一个仓库意思是将这个文件夹初始化并让他作为本地仓库当出现图二的代码表示初始化成功现在它才真正意义上的具有了本地仓库的意义注意空格初始化之后你会发现在文件夹本地仓库多出了一个隐藏文件夹该文件夹是自带的传输工具将文件从本地传输至库中无需在意它但可以检查上一步的初始化是否成功如图一所示接着在文件夹本地仓库中创立一个文本文档并改名为且扩展名为如图二所示再在命令提示符上分别输入指令必须是在路径下如图一所示注意空格提交说明注意此代码与所给代码不同注意在输入命令中会碰到如图二的情况需要输入命令核对信息注意空格引号里填注册所用的邮箱引号里填的昵称之后接着输入命令就是库中及其后面的部分上文有所提及末尾的四位数及后的数字为的代理端口如下图所示如果最后一步无法提交完成则使用备用地址有时候可能在不同的地址上提供服务您可以尝试使用备用地址来推送代码在命令提示符中执行以下命令然后再次尝试推送在输入完注意空格后第一次上传需要输入密码验证成功后如图二所示并再次打开新建的储存库此时界面应如图三所示即该步骤完成啦到此步骤三全部结束啦简单论述一下如想要深入了解可以查看教程命令可将该文件的修改添加到暂存区文件只是我们在文件夹中创立的一个文本现在并不能说是本地仓库里的文件先通过上传到暂缓区命令将暂存区内容添加到本地仓库中现在才可以说文件在本地仓库里命令创建分支因为要将本地仓库中的文件上传到仓库中则要在不损坏其他内容的情况下进行上传所以我们需要使用分支使用分支意味着你可以从开发主线上分离开来然后在不影响主线的同时继续工作添加一个新的远程仓库指定一个远程仓库的名称和将其添加到当前仓库中其实也就是将你的本地仓库连接到你新建的库中如果说的绑定是与进行配对连接那么该代码就是将本地仓库仓库三者连接起来命令用于从将本地的分支版本上传到远程并合并上传到远程库即库购买域名域名比如我的域名是中国输入该网址可以进入到了我的博客通俗的说它想到于一个门这个门是通向我的仓库的通过这个门我们可以从外部进入仓库无法修改仓库中的内容看到仓库里的文件再在主题的作用下看到了现在博客的模样那么我们现在要有这个门需要购买它腾讯云域名注册浏览器直接搜索域名购买进入腾讯云域名阿里云新网都可以上文提到的教程就是阿里云在腾讯云中搜索域名并点击域名注册如下图所示输入你想要的域名前缀英文例如我的域名前缀就是直接查询它会显示所有相关前缀的域名找到自己喜欢的域名后缀登录腾讯云并将其加入购物车进行购买如下图所示在购买页面第一次购买要创建信息模板审核大概需要两到三个小时建议开启自动续费服务自己的博客肯定会一直用下去除非你想换一个域名你也可以之后再关闭该服务之后就可以提交订单付款啦该步骤很简单的到此就完成啦门买好啦安装和这一步骤是为门的安装做好准备工作在此相当于一个工具有很多命令来源于它是一个快速简洁且高效的博客框架最原始的主题基于开发使用解析文章并生成静态页面非常便于静态部署和加载其次由于框架非常轻量只包含静态页面的生成以及文章的分类页甚至没有后台管理但简约的框架总能激发开发者们的开发欲望于是大量形态各异的主题诞生了目前官方收录了多款主题的安装直接进入官网进行下载最好下载右边的新版可以体验更多主题如下图所示安装安装完成后可以用打开命令提示符检验一下是否安装成功并检查版本直接输入指令如下图所示注意空格设置在安装全局模块时的路径和环境变量通俗点说如果不设置的话安装模块的时候就会把模块装到盘占用盘的空间并且有可能安装好后却无法使用所以我们需要设置一下首先在文件夹中新建两个空文件夹如图一所示再打开命令提示符输入两条指令使其生效如图二所示注意空格引号中间为文件夹的位置引号中间为文件夹的位置环境变量的设置首先打开环境变量设置系统系统信息高级系统设置高级环境变量如下图所示如下图所示先在系统变量中新建一个变量名变量值就是文件夹的路径此处与所给教程不同再编辑一个用户变量如下图所示对用户变量中的进行编辑将变量值改为文件的路径之后再命令提示符中输入指令注意空格并且之后你会在文件夹里的那个文件夹中看见文件夹即环境变量修改成功啦如下图所示的安装首先我们再次创建一个仓库之前提交文件的那个仓库可以删除了作为真正的博客本地仓库该库很重要如下图所示该库的名字必须以结尾必须勾选添加自述文件打开新建库进入设置点击右侧的出现如图所示图样即可在盘或者盘的某个文件夹下创建一个文件夹来作为博客的本地仓库如图所示打开命令提示符先转入刚刚盘下创立的文件夹再输入指令通过命令安装注意空格再接着输入命令注意空格初始化博客文件静态部署查看博客输入后会给予一个网址可以复制粘贴访问那就是你目前的博客框架如图三结束访问后必须返回命令提示符按以停止运行服务器现在回到我们的文件夹用笔记本打开文件如下图所示在文件的开头可以添加代码如图二所示注意空格冒号后都有空格接着在文件最底部添加代码如图一所示注意空格冒号后都有空格如图二你的仓库地址如图三目前的默认分支为再在命令提示符中输入代码文件夹途径下如图一图二所示注意空格安装一键部署插件清除缓存文件和已生成的静态文件生成网站静态文件到默认设置的文件夹的缩写自动生成网站静态文件并部署到设定的仓库的缩写图三表示完成图四是最后完成以后打开浏览器输入就可以打开你的网页了到此这个博客框架就套用好了第五步就结束啦解析域名现在虽然可以访问我们的网站但是网址是提供的而我们想使用我们自己的个性化域名我们买的那个门这就需要绑定我们自己的域名开始安装门啦现在来介绍解析域名和绑定域名解析域名首先从腾讯云域名你购买域名的平台进入控制台对自己的域名进行解析如下图所示添加第一个记录如图一操作添加第二个记录如图二操作第二个记录中的地址的获取需打开命令提示符输入代码注意空格注意网络不能连接错误如图三所示新建库的名字在文件夹中的文件夹中创建一个文本文档并命名为用记事本代开填写你的域名如图一保存关闭后要重命名将扩展名删除如图二进入新建库看看文件是否已经在你的项目中并进入设置在选项中将分支改为后面的文件改为点击确定如图一刷新之后下面会出现自定义域如果你的域名没有自动添加需要手动添加如图二最后浏览器输入域名查看如图三到此我们的门已经安装到仓库上啦但门内过于单调之后我们要进行门内的修饰添加主题设置主题现在我们开始对门内的物品进行修饰操作首先进入主题官网选择你喜欢的主题点击进去就可以看见相应主题的教程这里我们以主题设置为例但在这里我推荐我的设置方法下载主题点击主题复制其网址如图一图二所示之后打开命令提示符转到文件夹下的文件夹中再输入代码注意空格如图一所示之后在文件夹中会有刚刚下的新文件其实该代码就是克隆了一个仓库到本地而这个仓库里的东西是关于主题的相关代码如图二所示在文件夹中打开文件进行编辑如图一文件开头部分在上一步骤也提过语言和时间最好如图二设置其他的随意文件底部的设置填写刚刚那个文件夹的名字更换主题时此处都需要更换如图三注意空格冒号后都有空格最后打开命令提示符转到文件夹下分别输入代码注意空格清除缓存文件和已生成的静态文件生成网站静态文件到默认设置的文件夹的缩写自动生成网站静态文件并部署到设定的仓库的缩写通过网页浏览部署到仓库的文件结束后记得每次对文件夹进行了操作后都要如此输入这四个命令每次对文件夹进行了操作后都要如此输入这四个命令每次对文件夹进行了操作后都要如此输入这四个命令重要的事说三遍得到的网址就是本次对文件夹操作后的结果如图一所示你也可以通过域名查看如图二所示注意若修改的文件过大通过域名查看修改情况可能会有延迟所以通过浏览更直接主题的修改首先打开文件夹中的文件夹再打开所用的主题文件夹用记事本打开文本如图一图二所示文件内容很多包括了很多方面每个人对于页面的要求不同大家自行根据官方指南调整注意每当你改动文件夹都需要在命令提示符中输入代码注意空格结束后记得到此我们的门也安装成功内部装饰也完成啦现在我们要往里面添加点装饰品个人博客的使用现在就最后一步啦万事俱备只欠东风如何将自己写的文章添加到上呢莫慌开讲首先我们下载一个图片管理插件是博客框架中的一个插件用于管理和处理博客中的图片资源它可以帮助你在写作博客时更方便地引用和管理图片使用插件你可以将图片文件放入指定的文件夹中并通过简单的语法来引用这些图片很重要插件会自动将图片复制到生成的静态网页中并生成相应的在命令提示符路径下输入代码注意空格如下图所示打开文件夹下的文件不是主题文件夹下的文件在部分进行修改如图二所示将后的改为这个配置的意思是每次新建一个博客会增加一个和博客同名的文件夹可以用于存放照片再在下方添加三行代码注意空格可以有利于通过几个简单的语法来引用图片修改完这些操作后记得在命令提示符中输入那四个命令准备工作完成现在在命令提示符路径下输入代码注意空格如图二同样你也可以学习文件夹中的文档中的内容如图一该文档要在你添加一份文档后才可以删除因为空的文件夹无法通过命令添加文档可以发现在文件夹中多出来两个文件文档是通过来编写文章的另一个同名文件夹可以用来存储照片举例说明我需要使用文件夹中的照片我们先试试复制粘贴如下图所示那么我们会发现在文件夹中多出来一张照片文章使用的照片是该照片而不是同名文件夹中的照片如果将这张照片再放进文件夹中中就不会显示照片了所以该照片只能放在文件夹中那么这种方式使用照片会使文件夹会很杂乱那么我们换一种方式引用照片在你要引用照片的地方英文输入必须是英文且中间无空格内输入你给图片的命名中先输入此时会弹出选择直接选择同名文件夹再选择你想引用的图片就完成啦如下图所示代表目前所在的目录在这里即文件夹代表上一层目录代表根目录保存输入四个命令上传在你的博客中就可以看见啦最后再提醒一下每当你改动文件夹或者上传新的文章都需要在命令提示符中输入代码上传到云端进行保存注意空格结束后记得那么到此我们的个人博客搭建与主题的运用就全部完成啦最后再次感谢小智不厌其烦的解答以及知乎枫叶的教程在搭建过程中也会遇到许多的问题和困难我们应该积极的查询资料有时候一个问题就要查半天最后还有可能没解决但是当问题解决时的满足感令人愉悦所以尝试解决多去试一试吧我们的旅行到此就要结束啦也是时候说再见啦',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-09-23 16:26:38',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 23
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://bu.dusays.com/2023/09/20/650af5bb1b70d.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="主题博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="主题博客"/><span class="back-menu-item-text">主题博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://7bu.top/" title="不去图床"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="不去图床"/><span class="back-menu-item-text">不去图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">松下清斋</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://bu.dusays.com/2023/09/20/650ae275e230f.jpg" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://bu.dusays.com/2023/09/20/650ae275e230f.jpg"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://bu.dusays.com/2023/09/20/650ae28d16e31.jpg" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://bu.dusays.com/2023/09/20/650ae28d16e31.jpg"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/blog/" style="font-size: 1.05rem;">blog<sup>3</sup></a><a href="/tags/%E4%B8%89%E8%A7%82/" style="font-size: 1.05rem;">三观<sup>1</sup></a><a href="/tags/%E4%B8%AD%E5%8C%BB/" style="font-size: 1.05rem;">中医<sup>2</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.05rem;">生活<sup>2</sup></a><a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.05rem;">随笔<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/Blog/" itemprop="url">Hexo博客</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/blog/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>blog</span></a></span></div></div><h1 class="post-title" itemprop="name headline">小白搭建博客与fluid主题运用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-08-04T15:16:55.000Z" title="发表于 2023-08-04 23:16:55">2023-08-04</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2023-09-23T08:26:38.258Z" title="更新于 2023-09-23 16:26:38">2023-09-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为武汉"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>武汉</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://bu.dusays.com/2023/09/20/650aded1342cf.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><div class="post-ai-description"><div class="ai-title"><i class="anzhiyufont anzhiyu-icon-bilibili"></i><div class="ai-title-text">AI-摘要</div><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i><i class="anzhiyufont anzhiyu-icon-circle-dot" title="朗读摘要"></i><div id="ai-tag">Tianli GPT</div></div><div class="ai-explanation">AI初始化中...</div><div class="ai-btn-box"><div class="ai-btn-item">介绍自己 🙈</div><div class="ai-btn-item">生成本文简介 👋</div><div class="ai-btn-item">推荐相关文章 📖</div><div class="ai-btn-item">前往主页 🏠</div><div class="ai-btn-item" id="go-tianli-blog">前往爱发电购买</div></div><script data-pjax src="https://cdn.cbd.int/hexo-theme-anzhiyu@1.6.6/source/js/anzhiyu/ai_abstract.js"></script></div><article class="post-content" id="article-container" itemscope itemtype="http://example.com/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/"><header><a class="post-meta-categories" href="/categories/Blog/" itemprop="url">Hexo博客</a><a href="/tags/blog/" tabindex="-1" itemprop="url">blog</a><h1 id="CrawlerTitle" itemprop="name headline">小白搭建博客与fluid主题运用</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">北轩孤淞</span><time itemprop="dateCreated datePublished" datetime="2023-08-04T15:16:55.000Z" title="发表于 2023-08-04 23:16:55">2023-08-04</time><time itemprop="dateCreated datePublished" datetime="2023-09-23T08:26:38.258Z" title="更新于 2023-09-23 16:26:38">2023-09-23</time></header><p>首先感谢小智的幸苦付出，帮本人搭建起来了个人博客, 以及为我解惑。作为一名中医学生，对这方面的了解确实不多，但身为理科生，对数字和字符的敏感，激发了我的兴趣。那么，就以我这样一个小白的视角去看看到底是如何搭建个人博客以及运用 fluid 主题的吧。</p>
+<p>此外，在这里也推荐一个<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102592286">教程</a>，本人也是跟着此教程一步步摸索的。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ol>
+<li>首先你最好要有翻墙工具，因为下载的一些东西有的在外网上，没有的话，可能会出现卡顿。<br>在这里推荐 clash  ，首先注册一个 GLaDOS 的账号，点击此进入 <a target="_blank" rel="noopener" href="https://glados.rocks/">GLaDOS</a><br>进入首页，下载 clash 客户端，注意是 windows 版本。并根据它所给的步骤安装，如下图所示。（根据自己的情况在商店中选择会员）</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/001.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/002.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol>
+<li>左击桌面左下角的 “ Windows ” 按钮，搜索“命令提示符”应用（ win 10 ），或者在桌面下方的   “ Windows ” 搜索中输入命令提示符（ win 11 ），打开文件位置。<br>之后右击命令提示符，打开属性，点击快捷方式中的高级选项，并勾选“用管理身份运行”，如下图所示</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/003.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/004.png">
+
+<br>
+<br> 
+<br>
+<br>
+
+<ol start="3">
+<li>下载软件 Visual Studio Code ，打开该软件，点击左侧最下方按钮，并搜索下载如图所示的三个插件。</li>
+</ol>
+<ul>
+<li>第一个是语言的转换  </li>
+<li>第二个是用于我们的博客写作，我们需要知道它的使用方法，点击进入 <a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown官方教程</a> ，学习基本语法和扩展语法。此外还有 <a target="_blank" rel="noopener" href="https://blog.csdn.net/heimu24/article/details/81189700">Markdown图片设置</a> 以及 <a target="_blank" rel="noopener" href="https://blog.csdn.net/thither_shore/article/details/52181464">Markdown字体颜色大小设置</a> （这些仅供参考，也可自行查找了解学习）<br>一般我们在写作时会打开侧边预览，快捷键“Ctrl+k v”（先按Ctrl+k，再按v，不要同时按）</li>
+<li>第三个是后面用于博客网页显示图片所需的插件。</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/005.png">
+
+<br>
+<br>
+
+<h2 id="GitHub-注册"><a href="#GitHub-注册" class="headerlink" title="GitHub 注册"></a>GitHub 注册</h2><p><strong>正式的第一步，注册 GitHub 账号， GitHub 相当于一个“仓库”（云端），装载着你的博客内容。</strong></p>
+<ol>
+<li>打开 <a target="_blank" rel="noopener" href="https://github.com/">GitHub官网</a> （这里需要翻墙，不开vpn可能会进不去），直接输入邮箱注册，如下图所示。</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/006.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="2">
+<li>完成填写电子邮箱，密码，用户名即可，如下图所示。</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/007.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="3">
+<li>在此之后，会根据你填写的电子邮箱发送验证码，正确填写即可。这便注册成功，之后可根据自己的实际情况填写，也可以点击跳过个性化，搭建个人博客不需要其他很多的无关操作。</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/008.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="4">
+<li>出现下图所示，我们的 <strong>注册GitHub</strong> 就完成啦。</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/009.png">
+
+<p>至此，第一步的操作就结束啦！</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="Git-安装"><a href="#Git-安装" class="headerlink" title="Git 安装"></a>Git 安装</h2><p>在这之前，我们应该了解一下什么是 Git ， <strong>通俗点说， Git 是一种传输工具，是将你的文件，从本地传输到你的仓库（ GitHub ）中。</strong></p>
+<ol>
+<li><strong>直接进入 Git 官网下载</strong>， <a target="_blank" rel="noopener" href="https://git-scm.com/download">Git官网下载</a><br>在这里下载的是2.41.0版本，与教程所给版本2.25.0不同，有所差别。</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/010.png">
+
+<br>
+<br>
+
+<ul>
+<li>选择 windows （视窗）下载，然后根据电脑系统信息中的系统类型，选择下载适用电脑的 Git 类型</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/011.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/012.png">
+
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="2">
+<li><strong>下载完成后，按照下列步骤一步步操作安装</strong></li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/013.png">
+
+<br>
+<br>
+
+<ul>
+<li>先选择你需要存储 Git 的文件夹</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/014.png">
+
+<br>
+<br>
+
+<ul>
+<li>桌面快捷方式的建立（无需勾选）</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/015.png">
+
+<br>
+<br>
+
+
+<ul>
+<li>给文件的命名（保持默认就行）</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/016.png">
+
+<br>
+<br>
+
+
+<ul>
+<li>之后按照图片上的一步步操作勾选即可</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/017.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/018.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/019.png">
+
+<br>
+<br>
+
+
+<ul>
+<li>此处，<strong>我们要勾选 Git 自带的 SSH</strong> ，在下一个步骤中，我们需要利用 SSH 来完成  GitHub 的绑定并提交文件，这样很方便快捷</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/020.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/021.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/022.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/023.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/024.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/025.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/026.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/027.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/028.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/029.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="3">
+<li>安装完成后，<strong>打开命令提示符（上文准备工作中所提及的），直接输入 git 回车即可。观察是否出现了如图所示的字样，如果出现了，则说明安装成功啦!</strong></li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/030.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/031.png">
+
+<p>至此，第二步就全部成功完成啦！</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="绑定-GitHub-并提交文件"><a href="#绑定-GitHub-并提交文件" class="headerlink" title="绑定 GitHub 并提交文件"></a>绑定 GitHub 并提交文件</h2><p>我们已经注册成功了 GitHub 和下载完成了 Git ，上文提到过， GitHub 是一个“仓库”（云端），将要装载着你个人博客的相关文件。 Git 则是一个“传输工具”，连接着你的电脑（本地文件）和你的“仓库”（ GitHub ）。<br><strong>那么现在我们要做的就是将“传输工具”对上“仓库”的接口</strong></p>
+<ol>
+<li>绑定 GitHub</li>
+</ol>
+<p>上文提到了勾选 Git 自带的 SSH ，在此处我们需要利用。首先我们要了解什么是 SSH ？<br>SSH （安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。<br>简单来说， <strong>SSH 就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度</strong></p>
+<p>我们要用 git 上传文件到 GitHub 首先得利用 SSH 登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH。</p>
+<ul>
+<li>打开命令提示符，输入 ssh ，查看本机是否安装成功 SSH ，当出现如下图所示，则表示安装 SSH 成功</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/032.png">
+
+<br>
+<br>
+
+<ul>
+<li>再直接输入命令 <strong>（注意空格： -t 和 rsa 前有空格）</strong>（表示我们指定 RSA 算法生成密钥）<br> <strong>然后敲四次回车键</strong>，之后就就会生成两个文件，分别为秘钥 id_rsa 和公钥 id_rsa.pub（ pub 为扩展名），在命令提示符上会有位置说明，如下图所示。</li>
+</ul>
+<blockquote>
+<p>ssh-keygen -t rsa  </p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/033.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/034.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/036.png">
+
+<br>
+<br>
+
+<p>如果命令提示符操作完成后，实在找不到文件也没有关系，按照以下步骤直接在 Git Bash 上打开就行，分别输入 <strong>（注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和 Shift+insert.）</strong>   <strong>（注意空格）</strong></p>
+<blockquote>
+<p>cd ~&#x2F;.ssh<br>ls<br>cat id_rsa.pub   </p>
+</blockquote>
+<p>然后产生的代码其实是跟公钥文件 id_rsa.pub 中的代码一样的，如下图所示。</p>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/035%20(1).png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/035.png">
+
+
+<br>
+<br>
+
+<ul>
+<li>之后登录 GitHub ，点击右上角的个人图标，再在弹出框中点击 setting （设置），如下图所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/037.png">
+
+<br>
+<br>
+
+<ul>
+<li>接着，如下图，先点击 <strong>SSH and GPG keys</strong> ，再点击 <strong>New SSH key</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/038.png">
+
+<br>
+<br>
+
+<ul>
+<li>再将公钥文件 <strong>id_rsa.pub</strong> 中的内容（或者 <strong>Git bash</strong> 中产生的代码内容）复制粘贴到 key 内，<br><strong>（一定要输入标题且符合要求，此处跟上面所提及的教程有所出入，如果不输入标题就不会添加成功新的 SSH 密钥，当添加成功时，你的邮箱会收到提醒）</strong><br>再点击 <strong>Add SSH key</strong> ，如下图：</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/039.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/040.png">
+
+<br>
+<br>
+
+<ul>
+<li>最后，在命令提示符中输入命令并回车   <strong>（注意空格：-T和git前有空格）</strong><br>如果出现了第一个图中的情况，直接输入 yes 回车即可。<br>出现图二中的代码即表示绑定成功啦！</li>
+</ul>
+<blockquote>
+<p>ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a></p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/041.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/042.png">
+
+<p>到此，该步骤中的绑定 Git 已经完成了，接下来就是提交文件啦！</p>
+<br>
+<br>
+<br>
+<br>
+
+<ol start="2">
+<li>提交文件</li>
+</ol>
+<p>这一步就是<strong>将 GitHub 中的仓库通过 Git 连接到本地，然后从本地上传文件到 GitHub 的仓库</strong>，以确定连接成功。   该步骤与上文提到的教程几乎完全不符，在此也花了很多时间摸索，此方法也算比较简单的。（此步骤是为了连接本地、 Gi 、 GitHub 三者，为后面的铺垫，该新建的仓库意义不大，后面可以删除）</p>
+<ul>
+<li>首先，点击 GitHub 主页右上角的个人头像，打开“ your profile ”（个人资料）。<br>点击右上角“ + ”按钮，创建新的仓库。<br>命名后，点击最下方的“创建储存库”<br><em><strong>注意：不用勾选添加自述文件！！！</strong></em>（后面会自己上传自述文件，且添加了自述文件，就跟此方法有所差异）<br>如下图所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/043.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/044.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/045.png">
+
+<br>
+<br>
+
+<ul>
+<li>打开新建立的仓库<br>注意第二张图最下方红色框框里的内容，这是我们等下所需要的相关代码<br> <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>git init<br>  git add README.md<br>  git commit -m “提交说明”  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;# <strong>注意：此代码与所给代码不同</strong><br>  git branch -m main<br>  git remote add origin  ···  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;# <strong>“···”部分为上方红色矩形框中的http地址</strong><br>  git push -u origin main   </p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/046.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/047.png">
+
+<br>
+<br>
+
+<p>上面是准备工作，接下来是进入正题  </p>
+<ul>
+<li><p>首先，我们要选择一个文件夹来储存本地数据（即储存本地仓库），例如下图，我选择在 D 盘中创立一个新的文件夹 qinghuan （建议创立在 D 盘以便后续操作），来储存本地仓库（ git ）   </p>
+</li>
+<li><p>在上述储存文件夹中再建立一个<strong>新的空文件夹</strong>（ git ）作为 Git 的本地仓库（命名随意，但必须是英文），如下图所示</p>
+</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/048.png">
+
+<br>
+<br>
+
+<ul>
+<li>打开命令提示符，如图所示，最先开始是对C盘的编辑，而我创立的文件夹在 D 盘，所以我<strong>需要改变路径</strong>，进入到我们刚刚创立的本地仓库（ git ）中 <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>d:<br>cd d:&#x2F;qinghuan&#x2F;git</p>
+</blockquote>
+<ul>
+<li>接着我们输入代码<br>（ <strong>git init 命令来初始化一个 Git 仓库</strong>，意思是将这个 git 文件夹初始化，并让他作为本地仓库，当出现图二的代码，表示初始化成功，现在它才真正意义上的具有了“本地仓库”的意义。） <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/049.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/050.png">
+
+<br>
+<br>
+
+<ul>
+<li>初始化之后，你会发现在 git 文件夹（本地仓库）多出了一个<strong>隐藏文件夹 .git</strong> （该文件夹是 Git 自带的传输工具，将文件从本地传输至 GitHub 库中）。无需在意它，但可以检查上一步的初始化是否成功，如图一所示<br>接着，在 git 文件夹（本地仓库）中创立一个文本文档，并<strong>改名为 README</strong> ，且<strong>扩展名为 md</strong> ，如图二所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/051.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/052.png">
+
+<br>
+<br>
+
+<ul>
+<li>再在命令提示符上分别输入指令（必须是在 git 路径下，如图一所示） <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>git add README.md<br>  git commit -m “提交说明”  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # <strong>注意：此代码与所给代码不同</strong>    </p>
+</blockquote>
+<ul>
+<li><strong>注意</strong>，在输入 git commit 命令中，会碰到如图二的情况，需要输入命令（核对信息） <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>git config –global user.email “” &ensp;&ensp;&ensp;&ensp; # 引号里填注册 <strong>GitHub 所用的邮箱</strong><br>git config –global user.name “”  &ensp;&ensp;&ensp;&ensp; # 引号里填 <strong>GitHub 的昵称</strong>  </p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/053.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/054.png">
+
+<br>
+<br>
+
+<p>之后接着输入命令</p>
+<blockquote>
+<p>git branch -m main<br>  git remote add origin  ···  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # <strong>“···”就是GitHub库中http及其后面的部分，上文有所提及</strong><br>  git config –global http.proxy <a target="_blank" rel="noopener" href="http://127.0.0.1:7890/">http://127.0.0.1:7890</a>   &ensp;&ensp;&ensp;&ensp;&ensp; 末尾的四位数，及“：”后的数字为vpn的代理端口，如下图所示<br>  git push -u origin main </p>
+</blockquote>
+<p> 如果最后一步无法提交完成，则使用GitHub备用地址: 有时候GitHub可能在不同的地址上提供服务。您可以尝试使用备用地址来推送代码。在命令提示符中执行以下命令：</p>
+<blockquote>
+<p>git remote set-url origin <a target="_blank" rel="noopener" href="https://github.com/Floating-tomb/qinghuan.git">https://github.com/Floating-tomb/qinghuan.git</a></p>
+</blockquote>
+<p>然后再次尝试推送：</p>
+<blockquote>
+<p>git push -u origin main</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/147.png">
+
+<ul>
+<li>在输入完 git push -u origin main  <strong>（注意空格）</strong> 后，第一次上传需要输入密码，验证成功后，如图二所示<br>并再次打开新建的储存库，此时界面应如图三所示，即该步骤完成啦</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/055.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/056.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/057.png">
+
+<p>到此，步骤三全部结束啦！</p>
+<p>简单论述一下，<strong>如想要深入了解，可以查看 <a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">Git教程</a></strong> </p>
+<ul>
+<li><strong>git add</strong> 命令可将该文件的修改添加到暂存区  ，文件 RAEADME.md 只是我们在 git 文件夹中创立的一个文本，现在并不能说是本地仓库里的文件，先通过 git add 上传到暂缓区  </li>
+<li><strong>git commit</strong> 命令将暂存区内容添加到本地仓库中 ，现在才可以说文件 README.md 在本地仓库里    </li>
+<li><strong>git branch</strong> 命令创建分支  ， 因为要将本地仓库中的文件上传到 GitHub 仓库中，则要在不损坏其他内容的情况下，进行上传，所以我们需要使用分支（使用分支意味着你可以从开发主线上分离开来，然后在不影响主线的同时继续工作）  </li>
+<li><strong>git remote add <remote_name> <remote_url></remote_url></remote_name></strong> 添加一个新的远程仓库。指定一个远程仓库的名称和 URL ，将其添加到当前仓库中。其实也就是将你的本地仓库连接到你新建的 GitHub 库中。<strong>如果说 GitHub 的绑定是 Git 与 GitHub 进行配对连接，那么该代码就是将本地仓库、 Git 、 GitHub 仓库三者连接起来</strong>   </li>
+<li><strong>git push</strong> 命令用于从将本地的分支版本上传到远程并合并 ，上传到远程库即GitHub库</li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p><strong>“域名”</strong><br>比如我的域名是 <strong>qinghuan.中国</strong>，输入该网址，可以进入到了我的博客。 通俗的说，它想到于一个 <strong>“门”</strong>， 这个门是通向我的 GitHub 仓库的，通过这个门，我们可以从外部进入 GitHub 仓库（无法修改仓库中的内容），看到仓库里的文件，再在主题的作用下，看到了现在博客的模样。<br>那么我们现在要有这个 <strong>“门”</strong>，需要购买它<br><a target="_blank" rel="noopener" href="https://buy.cloud.tencent.com/domain">腾讯云域名注册</a></p>
+<ol>
+<li>浏览器直接搜索“域名购买”，进入腾讯云域名（阿里云，新网都可以，上文提到的教程就是阿里云）</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/058.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="2">
+<li>在腾讯云中搜索域名，并点击域名注册，如下图所示</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/059.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/060.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="3">
+<li>输入你想要的域名前缀（英文），例如我的域名前缀就是“ qinghuan ”，直接查询，它会显示所有相关前缀的域名<br>找到自己喜欢的域名后缀，登录腾讯云并将其加入购物车，进行购买，如下图所示</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/061.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/062.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="4">
+<li>在购买页面，第一次购买要“创建信息模板”，审核大概需要两到三个小时<br>建议开启自动续费服务，自己的博客肯定会一直用下去，除非你想换一个域名，你也可以之后再关闭该服务<br>之后就可以提交订单付款啦</li>
+</ol>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/063.png">
+
+<p>该步骤很简单的，到此就完成啦！（“<strong>门</strong>”买好啦！）     </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="安装node-js和Hexo"><a href="#安装node-js和Hexo" class="headerlink" title="安装node.js和Hexo"></a>安装node.js和Hexo</h2><p>这一步骤是为 <strong>“门”</strong> 的安装做好准备工作！</p>
+<p><strong>node.js</strong> 在此相当于一个工具，有很多 npm 命令来源于它</p>
+<p><strong>Hexo</strong> 是一个快速、简洁且高效的博客框架（最原始的主题），基于 Node.js 开发。Hexo 使用 Markdown 解析文章，并生成静态页面，非常便于静态部署和加载<br>其次由于 Hexo 框架非常轻量，只包含静态页面的生成，以及文章的分类页，甚至没有后台管理，但简约的框架总能激发开发者们的开发欲望，于是大量形态各异的主题诞生了，目前官方收录了 300 多款主题。</p>
+<ol>
+<li>node.js 的安装</li>
+</ol>
+<ul>
+<li>直接进入 <a target="_blank" rel="noopener" href="https://nodejs.org/en">node.js官网</a> 进行下载<br><strong>最好下载右边的新版，可以体验更多主题</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/064.png">
+
+<br>
+<br>
+
+<ul>
+<li>如下图所示安装 node.js</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/065.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/067.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/068.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/069.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/070.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/071.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/072.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/073.png">
+
+<br>
+<br>
+
+<ul>
+<li>安装完成后，可以用打开命令提示符检验一下是否安装成功并检查版本，直接输入指令，如下图所示<br> <strong>（注意空格）</strong> <blockquote>
+<p>node -v<br>npm -v</p>
+</blockquote>
+</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/074.png">
+
+<br>
+<br>
+
+<ul>
+<li><strong>设置 npm 在安装全局模块时的路径和环境变量</strong><br>通俗点说，如果不设置的话，安装模块的时候就会把模块装到 C 盘，占用 C 盘的空间，并且有可能安装好 hexo 后却无法使用，所以我们需要设置一下：<br>首先在 node.js 文件夹中<strong>新建两个空文件夹 node_cache 、 node_global</strong> ，如图一所示<br>再打开命令提示符，输入两条指令，使其生效，如图二所示<br> <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>npm config set prefix “”   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 引号中间为<strong>文件夹 node_global 的位置</strong><br>  npm config set cache “”    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 引号中间为<strong>文件夹 node_cache 的位置</strong></p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/075.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/076.png">
+
+<br>
+<br>
+
+<ul>
+<li><strong>环境变量的设置</strong><br>首先打开环境变量设置（ win11 ：系统——系统信息——高级系统设置——高级——环境变量）<br>如下图所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/077.png">
+
+<br>
+<br>
+
+<ul>
+<li>如下图所示，<strong>先在系统变量中</strong>新建一个<br><strong>变量名： NODE_PATH</strong><br>变量值： 就是 <strong>node_modules 文件夹的路径</strong>（此处与所给教程不同）</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/078.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/079.png">
+
+<br>
+<br>
+
+<ul>
+<li><strong>再编辑一个用户变量</strong>，如下图所示<br>对用户变量中的 Path 进行编辑<br>将<strong>变量值改为 node_global 文件的路径</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/080.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/081.png">
+
+<br>
+<br>
+
+<ul>
+<li>之后再命令提示符中输入指令 <strong>（注意空格）</strong> ，并且之后你会在 node_global 文件夹里的那个 node_modules 文件夹中看见 webpack 文件夹，即环境变量修改成功啦！<br>如下图所示</li>
+</ul>
+<blockquote>
+<p>npm install webpack -g</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/082.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/083.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/084.png">
+
+<br>
+<br>
+<br>
+<br>
+
+<ol start="2">
+<li>hexo 的安装</li>
+</ol>
+<ul>
+<li>首先我们再次创建一个 GitHub 仓库（之前提交文件的那个仓库可以删除了），作为真正的博客本地仓库（<strong>该库很重要</strong>）如下图所示<br><strong>该库的名字必须以 .github.io 结尾，必须勾选“添加自述文件”</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/085.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/086.png">
+
+<br>
+<br>
+
+<ul>
+<li>打开新建库，进入设置，点击右侧的 page ，出现如图所示图样即可</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/087.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/088.png">
+
+<br>
+<br>
+
+<ul>
+<li>在 <strong>D 盘或者 D 盘的某个文件夹下</strong>创建一个 blog 文件夹，来作为博客的本地仓库，如图所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/089.png">
+
+<br>
+<br>
+
+<ul>
+<li>打开命令提示符，先转入刚刚 D 盘下创立的 blog 文件夹，再输入指令，通过 nmp命令安装 Hexo <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>npm install -g hexo-cli</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/090.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/091.png">
+
+<br>
+<br>
+
+<ul>
+<li>再接着输入 Hexo 命令 <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>hexo init     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;# 初始化博客文件<br>  hexo g   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 静态部署<br>  hexo s        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 查看博客</p>
+</blockquote>
+<p> hexo s 输入后，会给予一个网址，可以复制粘贴访问，那就是你目前的博客框架，如图三<br> <strong>结束访问后，必须返回命令提示符按 Ctrl+c ，以停止运行服务器</strong></p>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/092.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/093.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/094.png">
+
+<br>
+<br>
+
+<ul>
+<li>现在回到我们的 blog 文件夹，用笔记本打开 _config.yml 文件，如下图所示<br>在文件的开头，可以添加代码，如图二所示 <strong>（注意空格：冒号后都有空格）</strong></li>
+</ul>
+<blockquote>
+<p>&ensp;&ensp;language: zh-CN<br>  &ensp;&ensp;timezone: ‘Asia&#x2F;Shanghai’</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/096.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/097.png">
+
+<br>
+<br>
+
+<ul>
+<li>接着在文件最底部，添加代码,如图一所示 <strong>（注意空格：冒号后都有空格）</strong></li>
+</ul>
+<blockquote>
+<p>deploy:<br>  &ensp;&ensp;type: git<br>  &ensp;&ensp;repository:       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 如图二，你的仓库地址<br>  &ensp;&ensp;branch: main     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 如图三，GitHub目前的默认分支为“ main ”</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/098.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/099.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/100.png">
+
+<br>
+<br>
+
+<ul>
+<li>再在命令提示符中输入代码（ blog 文件夹途径下）（如图一图二所示） <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>npm install hexo-deployer-git –save  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 安装一键部署插件<br>hexo clean  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;#清除缓存文件 db.json 和已生成的静态文件 public<br>hexo g       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)<br>hexo d       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)   </p>
+</blockquote>
+<p>图三，表示 hexo d 完成<br>图四，是最后完成以后，打开浏览器，输入 <a target="_blank" rel="noopener" href="http://xxx.github.io/">http://xxx.github.io</a> 就可以打开你的网页了</p>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/101.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/102.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/103.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/104.png">
+
+<p>到此， hexo 这个博客框架就套用好了，第五步就结束啦！   </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h2 id="解析域名"><a href="#解析域名" class="headerlink" title="解析域名"></a>解析域名</h2><p>现在虽然可以访问我们的网站，但是网址是 GitHub 提供的：<a target="_blank" rel="noopener" href="http://xxxx.github.io/">http://xxxx.github.io</a> 而我们想使用我们自己的个性化域名（我们买的那个“<strong>门</strong>”），这就需要绑定我们自己的域名。（开始安装“<strong>门</strong>”啦！）<br>现在来介绍解析域名和绑定域名</p>
+<ol>
+<li>解析域名</li>
+</ol>
+<ul>
+<li>首先从<a target="_blank" rel="noopener" href="https://cloud.tencent.com/search/%E5%9F%9F%E5%90%8D/1_1">腾讯云域名</a>（你购买域名的平台），进入控制台，对自己的域名进行解析，如下图所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/105.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/106.png">
+
+<br>
+<br>
+
+<ul>
+<li>添加第一个记录，如图一操作<br>添加第二个记录，如图二操作<br>第二个记录中的 ipv4 地址的获取，需打开命令提示符，输入代码 <strong>（注意空格）</strong><br>注意网络不能连接错误，如图三所示</li>
+</ul>
+<blockquote>
+<p>ping qinghuan.github.io    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # ping + GitHub新建库的名字</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/107.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/108.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/109.png">
+
+<br>
+<br>
+
+<ul>
+<li>在 blog 文件夹中的 source 文件夹中创建一个文本文档，并命名为 CNAME ，用记事本代开，填写你的域名，如图一<br><strong>保存关闭后要重命名，将扩展名 .txt 删除</strong>，如图二</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/110.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/111.png">
+
+<br>
+<br>
+
+<ul>
+<li>进入 Github 新建库，看看 CNAME 文件是否已经在你的项目中，并进入 setting （设置）</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/112.png">
+
+<br>
+<br>
+
+<ul>
+<li>在 page 选项中<br>将分支改为“ main ”，后面的文件改为“ root ”，点击 save （确定）  如图一<br>刷新之后下面会出现 custom domain （自定义域），如果你的域名没有自动添加，需要手动添加   如图二<br>最后，浏览器输入域名查看， 如图三</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/113.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/114.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/115.png">
+
+<p>到此，我们的“门”已经安装到仓库上啦！<br>但“<strong>门</strong>”内过于单调，之后，我们要进行“<strong>门</strong>”内的修饰（添加主题）</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="设置fluid主题"><a href="#设置fluid主题" class="headerlink" title="设置fluid主题"></a>设置fluid主题</h2><p>现在我们开始对“<strong>门</strong>”内的物品进行修饰操作！<br>首先进入 <a target="_blank" rel="noopener" href="https://hexo.io/themes/index.html">Hexo主题官网</a> ,选择你喜欢的主题（<strong>点击进去，就可以看见相应主题的教程</strong>）<br>这里我们以 <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">fluid主题设置</a> 为例 , 但在这里，我推荐我的fluid设置方法</p>
+<ol>
+<li>下载 fluid 主题</li>
+</ol>
+<ul>
+<li>点击 fluid 主题，复制其网址，如图一图二所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/116.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/117.png">
+
+<br>
+<br>
+
+<ul>
+<li>之后打开命令提示符，转到 blog 文件夹下的 themems 文件夹中，再输入代码 <strong>（注意空格）</strong> ，如图一所示<br>之后，在 themes 文件夹中会有刚刚下的新文件（其实<strong>该代码就是克隆了一个仓库到本地，而这个仓库里的东西是关于fluid主题的相关代码</strong>），如图二所示</li>
+</ul>
+<blockquote>
+<p>git clone <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid.git">https://github.com/fluid-dev/hexo-theme-fluid.git</a></p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/118.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/119.png">
+
+<br>
+<br>
+
+<ul>
+<li>在 blog 文件夹中打开 _config.yml 文件，进行编辑，如图一<br>文件开头部分，在上一步骤也提过，语言和时间最好如图二设置，其他的随意<br>文件底部的 theme 设置，填写刚刚那个文件夹的名字（更换主题时，此处都需要更换），如图三<br><strong>（注意空格：冒号后都有空格）</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/120.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/121.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/122.png">
+
+<br>
+<br>
+
+<ul>
+<li>最后打开命令提示符，转到 blog 文件夹下，分别输入代码  <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>hexo clean  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;# 清除缓存文件 db.json 和已生成的静态文件 public<br>hexo g       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  # 生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)<br>hexo d       &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  # 自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)<br>hexo s        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;# 通过网页浏览部署到仓库的文件（结束后记得“Ctrl+c”）</p>
+</blockquote>
+<p><em><strong>每次对 blog 文件夹进行了操作后，都要如此输入这四个命令！！！</strong></em>      </p>
+<p><em><strong>每次对 blog 文件夹进行了操作后，都要如此输入这四个命令！！！</strong></em>      </p>
+<p><em><strong>每次对 blog 文件夹进行了操作后，都要如此输入这四个命令！！！</strong></em>（重要的事说三遍）</p>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/123.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/124.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/125.png">
+
+<br>
+<br>
+
+<ul>
+<li>hexo s 得到的网址就是本次对 blog 文件夹操作后的结果， 如图一所示<br>你也可以通过域名查看,  如图二所示<br><strong>注意：若修改的文件过大，通过域名查看修改情况可能会有延迟，所以通过 hexo s 浏览更直接</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/126.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/127.png">
+
+<ol start="2">
+<li>fluid 主题的修改</li>
+</ol>
+<ul>
+<li>首先打开 blog 文件夹中的 themes 文件夹，再打开所用的主题文件夹fluid，用记事本打开 _config.yml 文本 ，如图一图二所示</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/128.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/129.png">
+
+<br>
+<br>
+
+<ul>
+<li>文件内容很多，包括了很多方面，每个人对于页面的要求不同，大家自行根据<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">官方指南</a>调整<br><strong>注意，每当你改动 blog 文件夹，都需要在命令提示符中输入代码</strong> <strong>（注意空格）</strong></li>
+</ul>
+<blockquote>
+<p>hexo clean<br>hexo g<br>hexo d<br>hexo s   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 结束后记得“Ctrl+c”</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/130.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/131.png">
+
+<p>OKOK,到此，我们的“<strong>门</strong>”也安装成功，内部装饰也完成啦！<br>现在我们要往里面添加点 “<strong>装饰品</strong>”！</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 id="个人博客的使用"><a href="#个人博客的使用" class="headerlink" title="个人博客的使用"></a>个人博客的使用</h2><p>现在，就最后一步啦！万事俱备，只欠东风<br>如何将自己写的文章添加到 blog 上呢？<br>莫慌，开讲！</p>
+<ul>
+<li><p>首先我们下载一个图片管理插件 Hexo-Asset-Image<br>Hexo-Asset-Image 是 Hexo 博客框架中的一个插件，用于管理和处理博客中的图片资源。它可以帮助你在写作博客时更方便地引用和管理图片。<br>使用 Hexo-Asset-Image 插件，<strong>你可以将图片文件放入指定的文件夹中，并通过简单的语法来引用这些图片（很重要）</strong>。插件会自动将图片复制到生成的静态网页中，并生成相应的 URL</p>
+</li>
+<li><p>在命令提示符 blog 路径下，输入代码 <strong>（注意空格）</strong> ,如下图所示</p>
+</li>
+</ul>
+<blockquote>
+<p>npm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/132.png">
+
+<br>
+<br>
+
+<ul>
+<li>打开 <strong>blog 文件夹</strong>下的_config.yml 文件（<strong>不是主题文件夹下的文件</strong>），在 writing 部分进行修改， 如图二所示<br>将 post_asset_folder 后的 false 改为 ture<br>这个配置的意思是每次新建一个博客，会增加一个和博客同名的文件夹（可以用于存放照片）<br>再在下方添加三行代码 <strong>（注意空格）</strong> , 可以有利于通过几个简单的语法来引用图片<blockquote>
+<p>marked:<br>&ensp;&ensp;prependRoot: true<br>&ensp;&ensp;postAsset: true</p>
+</blockquote>
+</li>
+</ul>
+<p><em><strong>修改完这些操作后记得在命令提示符中输入 hexo clean 那四个命令</strong></em></p>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/133.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/135.png">
+
+<br>
+<br>
+
+<ul>
+<li>准备工作完成，现在，在命令提示符 blog 路径下，输入代码 <strong>（注意空格）</strong>, 如图二<br>同样，你也可以学习 _posts 文件夹中的 Hello-world 文档中的内容 （blog\source_posts）如图一 （该文档要在你添加一份 .md 文档后才可以删除，因为空的 _post 文件夹无法通过命令添加文档）</li>
+</ul>
+<blockquote>
+<p>hexo new “”</p>
+</blockquote>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/136.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/137.png">
+
+<br>
+<br>
+
+<ul>
+<li>可以发现，在 _posts 文件夹中多出来两个文件 .md 文档是通过 markdown 来编写文章的，另一个同名文件夹可以用来存储照片</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/138.png">
+
+<br>
+<br>
+
+<ul>
+<li>举例说明，我需要使用文件夹中的照片<br>我们先试试复制粘贴，如下图所示，那么我们会发现在 _posts 文件夹中多出来一张照片， .md 文章使用的照片是该照片，而不是同名文件夹中的照片，如果将这张照片再放进文件夹中，markdown中就不会显示照片了，所以该照片只能放在 _posts 文件夹中<br>那么这种方式使用照片，会使 _post 文件夹会很杂乱。</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/139.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/140.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/141.png">
+
+<br>
+<br>
+
+<ul>
+<li>那么我们换一种方式引用照片，在你要引用照片的地方 <em><strong>英文输入</strong></em>  “**![]()<strong>”（</strong>必须是英文,且中间无空格<strong>）<br>[]内输入你给图片的命名<br>()中</strong>先输入“.&#x2F;”，此时会弹出选择，直接选择同名文件夹，再选择你想引用的图片**，就完成啦，如下图所示<br><strong>（”.&#x2F;“代表目前所在的目录,在这里即 _post 文件夹,” . .&#x2F;“代表上一层目录，”&#x2F;“：代表根目录）</strong></li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/142.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/143.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/144.png">
+
+<br>
+<br>
+
+<ul>
+<li>保存，<strong>输入hexo clean四个命令</strong>上传，在你的博客中就可以看见啦!</li>
+</ul>
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/145.png">
+<img width="600" height="500" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/146.png">
+
+<p><strong>最后再提醒一下，每当你改动 blog 文件夹或者上传新的文章，都需要在命令提示符中输入代码上传到云端，进行保存</strong> <strong>（注意空格）</strong></p>
+<blockquote>
+<p>hexo clean<br>hexo g<br>hexo d<br>hexo s   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; # 结束后记得“Ctrl+c”</p>
+</blockquote>
+<p>那么到此，我们的个人博客搭建与 fluid 主题的运用就全部完成啦！</p>
+<p>最后，再次感谢小智不厌其烦的解答以及<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/mai-nv-hai-de-xiao-huo-chai-35-19">知乎枫叶</a>的教程,在搭建过程中也会遇到许多的问题和困难，我们应该积极的查询资料，有时候一个问题就要查半天，最后还有可能没解决，但是当问题解决时的满足感令人愉悦。所以，尝试解决，多去试一试吧！</p>
+<p>我们的旅行，到此就要结束啦！也是时候说再见啦！</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650af5bb1b70d.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650af5bb1b70d.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">北轩孤淞</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2023/08/04/Blog/小白搭建博客与fluid主题运用/')">小白搭建博客与fluid主题运用</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://bu.dusays.com/2023/09/20/650ae275e230f.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ae275e230f.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://bu.dusays.com/2023/09/20/650ae28d16e31.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ae28d16e31.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=小白搭建博客与fluid主题运用&amp;url=http://example.com/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/&amp;pic=https://bu.dusays.com/2023/09/20/650aded1342cf.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">松下清斋</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/blog/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>blog<span class="tagsPageCount">3</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/09/20/650adf165e7fc.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/07/12/Traditional-Chinese-Medicine/%E4%B8%AD%E5%8C%BB%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650adeab0db12.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">中医基础理论</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/05/Life/%E9%95%BF%E7%9B%B8%E6%80%9D/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ade4c1ad85.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">长相思</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/2023/07/11/Blog/hello-world/" title="Hello World"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ade071e40d.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-07-11</div><div class="title">Hello World</div></div></a></div><div><a href="/2023/09/03/Blog/%E8%85%BE%E8%AE%AF%E4%BA%91serverless%E9%83%A8%E7%BD%B2Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="腾讯云serverless部署Hexo个人博客"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ade2abe998.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-09-03</div><div class="title">腾讯云serverless部署Hexo个人博客</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650af5bb1b70d.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" ait="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">个人生活所见所闻</b>相关的看法和思想，还有<b style="color:#fff">中医的学习</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">希望你可以在这里有所<b style="color:#fff">启发</b>和<b style="color:#fff">收获</b>吧！</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">北轩孤淞</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/Floating-tomb" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://bu.dusays.com/2023/09/19/6509b4431de8d.jpg" target="_blank" title="微信"><i class="anzhiyufont anzhiyu-icon-comments"></i></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub-%E6%B3%A8%E5%86%8C"><span class="toc-number"></span> <span class="toc-text">GitHub 注册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E5%AE%89%E8%A3%85"><span class="toc-number"></span> <span class="toc-text">Git 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%91%E5%AE%9A-GitHub-%E5%B9%B6%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6"><span class="toc-number"></span> <span class="toc-text">绑定 GitHub 并提交文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D"><span class="toc-number"></span> <span class="toc-text">购买域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node-js%E5%92%8CHexo"><span class="toc-number"></span> <span class="toc-text">安装node.js和Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D"><span class="toc-number"></span> <span class="toc-text">解析域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEfluid%E4%B8%BB%E9%A2%98"><span class="toc-number"></span> <span class="toc-text">设置fluid主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number"></span> <span class="toc-text">个人博客的使用</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/09/17/Thought/%E4%BA%89%E8%AE%BA/" title="争论"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650adf165e7fc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="争论"/></a><div class="content"><a class="title" href="/2023/09/17/Thought/%E4%BA%89%E8%AE%BA/" title="争论">争论</a><time datetime="2023-09-17T13:16:43.000Z" title="发表于 2023-09-17 21:16:43">2023-09-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/06/Life/%E7%90%B5%E7%90%B6%E8%A1%8C/" title="琵琶行"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650add166c3e7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="琵琶行"/></a><div class="content"><a class="title" href="/2023/09/06/Life/%E7%90%B5%E7%90%B6%E8%A1%8C/" title="琵琶行">琵琶行</a><time datetime="2023-09-06T08:27:16.000Z" title="发表于 2023-09-06 16:27:16">2023-09-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/09/03/Blog/%E8%85%BE%E8%AE%AF%E4%BA%91serverless%E9%83%A8%E7%BD%B2Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="腾讯云serverless部署Hexo个人博客"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ade2abe998.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="腾讯云serverless部署Hexo个人博客"/></a><div class="content"><a class="title" href="/2023/09/03/Blog/%E8%85%BE%E8%AE%AF%E4%BA%91serverless%E9%83%A8%E7%BD%B2Hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="腾讯云serverless部署Hexo个人博客">腾讯云serverless部署Hexo个人博客</a><time datetime="2023-09-03T02:19:57.000Z" title="发表于 2023-09-03 10:19:57">2023-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/05/Life/%E9%95%BF%E7%9B%B8%E6%80%9D/" title="长相思"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650ade4c1ad85.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="长相思"/></a><div class="content"><a class="title" href="/2023/08/05/Life/%E9%95%BF%E7%9B%B8%E6%80%9D/" title="长相思">长相思</a><time datetime="2023-08-04T17:19:25.000Z" title="发表于 2023-08-05 01:19:25">2023-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/" title="小白搭建博客与fluid主题运用"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/09/20/650aded1342cf.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小白搭建博客与fluid主题运用"/></a><div class="content"><a class="title" href="/2023/08/04/Blog/%E5%B0%8F%E7%99%BD%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%8Efluid%E4%B8%BB%E9%A2%98%E8%BF%90%E7%94%A8/" title="小白搭建博客与fluid主题运用">小白搭建博客与fluid主题运用</a><time datetime="2023-08-04T15:16:55.000Z" title="发表于 2023-08-04 23:16:55">2023-08-04</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By 北轩孤淞 </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">5</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="主题博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="主题博客"/><span class="back-menu-item-text">主题博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://7bu.top/" title="不去图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="不去图床"/><span class="back-menu-item-text">不去图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/blog/" style="font-size: 0.88rem;">blog<sup>3</sup></a><a href="/tags/%E4%B8%89%E8%A7%82/" style="font-size: 0.88rem;">三观<sup>1</sup></a><a href="/tags/%E4%B8%AD%E5%8C%BB/" style="font-size: 0.88rem;">中医<sup>2</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 0.88rem;">生活<sup>2</sup></a><a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.88rem;">随笔<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="https://cdn.cbd.int/hexo-theme-anzhiyu@1.6.6/source/js/utils.js"></script><script src="https://cdn.cbd.int/hexo-theme-anzhiyu@1.6.6/source/js/main.js"></script><script src="https://cdn.cbd.int/hexo-theme-anzhiyu@1.6.6/source/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.4/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("20/09/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 安知鱼 V1.6.6",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 北轩孤淞 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "visitor@anheyu.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
